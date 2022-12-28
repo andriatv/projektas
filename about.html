@@ -1,47 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset ="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Apollo | Ecommerce Wbsite Design </title>
-    <link rel="stylesheet" href="style.css">
-   <!-------<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apollo | Ecommerce Wbsite Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-------<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">------->
-    
-</head>
-<body>
-
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-               <a href="index.html"> <img src="images/logo1.png"  width="125px"> </a>
-                </div>
-                <nav>
-                    <ul id="MenuItems">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="account.html">Account</a></li>
-            
-                    </ul>
-                </nav>
-                <a href="cart.html"><img src="images/cart.png" alt="30px" height="30px"></a>
-                <img src="images/menu.png" class="menu-icon" 
-                onclick="menutoggle()">
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"> <img src="images/logo1.png" width="125px" /> </a>
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="account.html">Account</a></li>
+        </ul>
+      </nav>
+      <a href="cart.html"
+        ><img src="images/cart.png" alt="30px" height="30px"
+      /></a>
+      <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+    </div>
+    <aside>
+      <!-------feature categories---------->
+      <div class="categories">
+        <div class="small-container">
+          <div class="row">
+            <div class="aside-col-3">
+              <img src="images/category-1.jpg" />
             </div>
-            <div class="row">
-                <div class="col-2">
-                        <h1> About us</h1>
-                        <p> At BRIGHTnLight, we move because we love to. And our vision is clear; we want to inspire all peopel to be active. Because we believe being active is fun and that moving your way is the key.
-                            everyone’s invited, whether you’re breaking a sweat or simply live life on the go. </p>
-                        </p>With our community always at 
-                            heart, we deliver responsibly produced products that keep you moving,wherever you’re going. Big or small, record-breaking or not, it’s the moment that makes the difference. </p>
-                        <a href="" class="btn">Explore Now &#8594;</a>  
-                </div>
-                <div class="col-2">
-                    <img src="images/our_goal.jpg">
-                </div>
+            <div class="aside-col-3">
+              <img src="images/category-2.jpg" />
             </div>
+            <div class="aside-col-3">
+              <img src="images/category-3.jpg" />
+            </div>
+          </div>
         </div>
-    
+      </div>
+    </aside>
+    <div class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <h1>About us</h1>
+            <p>
+              At BRIGHTnLight, we move because we love to. And our vision is
+              clear; we want to inspire all peopel to be active. Because we
+              believe being active is fun and that moving your way is the key.
+              everyone’s invited, whether you’re breaking a sweat or simply live
+              life on the go.
+            </p>
+            <p>
+              With our community always at heart, we deliver responsibly
+              produced products that keep you moving,wherever you’re going. Big
+              or small, record-breaking or not, it’s the moment that makes the
+              difference.
+            </p>
+          </div>
+          <div class="col-2">
+            <img src="images/our_goal.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class="categories"></div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Shops App</h3>
+            <p>Download app for IOS and Android phones</p>
+            <div class="app-logo">
+              <img src="images/play-store.png" />
+              <img src="images/app-store.png" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <p>
+              Our purpose to provide comfort to the wearer during exercise or
+              leasure time
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2022 - Testing Page Creation VA</p>
+      </div>
+    </div>
+  </body>
+</html>
