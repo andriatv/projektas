@@ -5,11 +5,49 @@
 
 }
 body {
-    display: inline;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    /*Pridetas popins pirmoje dalyje jo nereikia tai uzkomentuoti ir atkomentuoti kita*/
+    font-family: 'Poppins',sans-serif;
+    
+  /*  display: inline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/  
 }
+:root{
+    --primary-color:#fff7e6;
+    --secondary-color: #fff;
+    --thirdly-color:#ffc34d;
+    --text-color:#555;
+    --picture-color: #fff;
+}
+/*keista----*/
+h1{
+    color:var(--text-color);
+}
+.dark-theme{
+    --primary-color:#000106;
+    --secondary-color: #fff;
+    --text-color:#A0A0A0;
+    --picture-color: #505050;
+
+}
+#icon {
+    width:30px;
+    cursor: pointer;
+}
+#cart{
+    width:30px;
+    cursor: pointer;
+    
+}
+.main {
+    background-color: var(--primary-color);
+}
+
+.main .comments .col-3 {
+    background-color: var(--secondary-color);
+}
+/*------keista*/
 .represent {
-    background-color: #fff7e6;
+    background-color: var(--primary-color);
   }
   
   .represent .row {
@@ -28,7 +66,7 @@ body {
 
 }
 .logo img{
-    background-color: #fff7e6;
+    background-color: var(--primary-color);
 }
 nav{
     flex:1;
@@ -46,11 +84,11 @@ nav ul li{
 }
 a{
     text-decoration:nove;
-    color:#555;
+    color:var(--text-color);
 }
 p{
 
-    color:#555; 
+    color:var(--text-color); 
 }
 .container{
     margin:auto;
@@ -74,7 +112,7 @@ padding-top: 20px;}
 }
 .btn{
     display: inline-block;
-    background: #ffc34d;
+    background: var(--thirdly-color);
     color: #000;
     padding: 8px 30px;
     margin: 30px 0;
@@ -85,30 +123,40 @@ padding-top: 20px;}
     background: #563434;
 }
 .header, .navbar {
-    background-color: #fff7e6;
+    background-color: var(--primary-color);
 }
 
 .col-3{
     flex-basis: 30%;
     min-width: 250px;
     margin-bottom: 30px;
+    
+   
 }
 
 .aside-col-3{
     flex-basis: 30%;
     min-width: 24vh;
-    margin-top: 20px;
+    margin-top: 200px;  
 }
-
+/*prideta*/
+aside{
+    background-color: var(--primary-color);
+}
 .aside-col-3 img {
-    width: 100%
+    width: 100%;  
+}
+/*prideta*/
+.aside-categries{
+    background-color: var(--primary-color);
 }
 .small-container{
     max-width: 1080px;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
-    color: #555;
+    color: var(--text-color);  
+    
 }
 .col-4{
     flex-basis: 25%;
@@ -131,7 +179,7 @@ color: inherit;
 
 .title::after{
     content: '';
-    background:  #ffd480;
+    background: var(--thirdly-color);
     width: 80px;
     height: 5px;
     border-radius: 5px;
@@ -142,7 +190,7 @@ color: inherit;
 }
 
 h4{
-    color: #555;
+    color: var(--text-color);
     font-weight: normal;
 }
 .col-4 p{
@@ -153,7 +201,7 @@ h4{
 }
 /*----- offer------- */
 .offer{
-    background: radial-gradient(#fff,#fff7e6);
+    background: radial-gradient(var(--secondary-color),var(--primary-color));
     margin-top: 80px;
     padding: 30px 0;
 }
@@ -161,7 +209,7 @@ h4{
     padding: 50px;
 }
 small{
-    color: #555;
+    color: var(--text-color);
 }
 /*-----Comments----*/
 .comments{
@@ -205,7 +253,7 @@ small{
     color: #8a8a8a !important;
 }
 .footer h3{
-    color: #fff;
+    color: var(--secondary-color);
     margin-bottom: 20px;
 }
 
@@ -252,32 +300,7 @@ ul{
     display: none;
 }
 
-/*------media query for medium screen menu-------*/
-@media only screen and (max-width: 800px){
-    nav ul{
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background: #333;
-        width: 100%;
-        overflow: hidden;
-        transition: max-height 0.5s;
-    }
-    nav ul li {
-        display: block;
-        margin-right: 50px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    nav ul li a{
-        color: #fff;
-    }
-    .menu-icon{
-        display: block;
-        cursor: pointer;
-    }
-    
-}
+
 /*-------------All Products page---------------*/
 .row-2{
     justify-content: space-between;
@@ -286,7 +309,7 @@ ul{
     
 }
 select{
-    border:1px solid #fff7e6;
+    border:1px solid #var(--primary-color);
     padding: 5px;
 }
 select:focus{
@@ -298,7 +321,7 @@ select:focus{
 
 .page-btn span{
     display: inline-block;
-    border: 1px solid #ffe066;
+    border: 1px solid var(--thirdly-color);
     margin-left: 10px;
     width: 40px;
     height: 40px;
@@ -308,9 +331,8 @@ select:focus{
 }
 
 .page-btn span:hover{
-    background: #ffe066;
-    color: #fff;
-}
+    background: var(--thirdly-color);
+    color: var(--secondary-color)}
 
 /*------Single product details-------*/
 
@@ -339,7 +361,7 @@ select:focus{
     padding-left: 10px;
     font-size: 20px;
     margin-right: 10px;
-    border: 1px solid #ffd480; 
+    border: 1px solid var(--thirdly-color); 
 }
 input:focus{
     outline: none;}
@@ -368,8 +390,8 @@ table{
 th{
     text-align: left;
     padding: 5px;
-    color: #fff;
-    background: #ffc34d;
+    color: var(--secondary-color);
+    background: var(--thirdly-color);
     font-weight: normal;
 }
 
@@ -383,7 +405,7 @@ td input{
 }
 
 td a{
-    color: #ffc34d;
+    color: var(--thirdly-color);
     font-size: 12px;
 }
 td img{
@@ -397,7 +419,7 @@ td img{
     justify-content: flex-end;
 }
 .total-price table{
-    border-top: 3px solid #ffc34d;
+    border-top: 3px solid var(--thirdly-color);
     width: 100%;
     max-width: 400px;
 }
@@ -411,7 +433,7 @@ th:last-child{
 /*------------Account Page----------------*/
 .account-page{
     padding: 50px 0;
-    background: radial-gradient(#fff,#fff7e6);
+    background: radial-gradient(var(--picture-color),var(--primary-color));
 }
 .form-container{
     background: #fff;
@@ -422,11 +444,12 @@ th:last-child{
     padding: 20px 0;
     margin: auto;
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
 }
 .form-container span{
     font-weight: bold;
     padding: 0 15px;
-    color: #555;
+    color: var(--text-color);
     cursor: pointer;
     width: 100px;
     display: inline-block;
@@ -438,9 +461,10 @@ th:last-child{
 .form-container form{
     max-width: 340px;
     padding: 0 20px;
-   position: absolute;
+    position: absolute;
     top: 70px;
     font-size: 12px;
+    transition: transform 1s;
 }
 
 form input {
@@ -464,11 +488,11 @@ form input {
     border: 1px solid #ccc;
 }
 .gender-radio-label {
-    margin-right: 45px;
+    margin-right: 40px;
 }
 
 form .btn{
-    width: 75%;
+    width: 85%;
     border: none;
     cursor: pointer;
     margin: 17px 0;
@@ -484,18 +508,45 @@ form .butn:focus{
     left: 0;
 }
 form a{
-    font-size: 12px;
+    font-size: 14px;
+    text-align: center;
 }
 #Indicator{
     width: 100px;
     border: none;
-    background-color: #ffc34d;
+    background-color: var(--thirdly-color);
     height: 3px;
     margin-top: 8px;
     transform: translateX(100px);
+    transition: transform 1s;
 
 }
-
+/*------media query for medium screen menu-------*/
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    
+}
 
 /*------media query for mobile menu-------*/
 @media only screen and (max-width: 600px){
@@ -519,7 +570,7 @@ nav ul li {
     margin-right: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
-    display: none;
+    
 }
 .single-product .row{
     text-align: left;
@@ -534,11 +585,13 @@ nav ul li {
 .cart-info p{
     display: none;
 }
+
 }
 @media screen and (max-width:768px){
     .columns{
         width: 100%;
     }
+    
 }
 
 @media only screen and (min-width: 830px) {
