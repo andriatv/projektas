@@ -7,6 +7,7 @@
 body {
     /*Pridetas popins pirmoje dalyje jo nereikia tai uzkomentuoti ir atkomentuoti kita*/
     font-family: 'Poppins',sans-serif;
+    background-color: var(--primary-color);
     
   /*  display: inline;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/  
@@ -23,7 +24,7 @@ h1{
     color:var(--text-color);
 }
 .dark-theme{
-    --primary-color:#000106;
+    --primary-color:#303030;
     --secondary-color: #fff;
     --text-color:#A0A0A0;
     --picture-color: #505050;
@@ -40,6 +41,10 @@ h1{
 }
 .main {
     background-color: var(--primary-color);
+}
+.main-row{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .main .comments .col-3 {
@@ -128,7 +133,7 @@ padding-top: 20px;}
 
 .col-3{
     flex-basis: 30%;
-    min-width: 250px;
+    min-width: 220px;
     margin-bottom: 30px;
     
    
@@ -309,7 +314,7 @@ ul{
     
 }
 select{
-    border:1px solid #var(--primary-color);
+    border:1px solid var(--primary-color);
     padding: 5px;
 }
 select:focus{
@@ -448,12 +453,13 @@ th:last-child{
 }
 .form-container span{
     font-weight: bold;
-    padding: 0 15px;
+    padding: 0px 15px;
     color: var(--text-color);
     cursor: pointer;
     width: 100px;
     display: inline-block;
 }
+
 .form-btn{
     display: inline-block;
 }
@@ -487,7 +493,7 @@ form input {
     padding: 0 10px;
     border: 1px solid #ccc;
 }
-.gender-radio-label {
+ .gender-radio-label { 
     margin-right: 40px;
 }
 
@@ -502,10 +508,12 @@ form .butn:focus{
 }
 
 #LoginForm{
-    left: -300px;
+    left: -330px;
 }
 #RegForm{
-    left: 0;
+    padding-left:  40px;
+    padding-right: 0;
+    left: -30px;
 }
 form a{
     font-size: 14px;
@@ -599,9 +607,6 @@ nav ul li {
       width: 80%;
     }
     aside {
-      position: absolute;
-      top: 120px;
-      right: 0px;
       width: 20%;
     }
     .small-aside{

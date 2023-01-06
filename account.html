@@ -31,7 +31,8 @@
       </div>
     </div>
     <!--------------------Account-page---------------->
-    <div class="main">
+    <div class="main-row">
+      <div class="main">
       <div class="account-page">
         <div class="container">
           <div class="row">
@@ -46,17 +47,17 @@
                   <hr id="Indicator">
                 </div>
                   <form id="LoginForm">
-                      <span for="Username">Username</span>
-                          <input type="text" name="Username" id="Username" />
+                          <span for="Username">Username</span>
+                          <input type="text" placeholder="Username" name="Username" id="Username" />
                           <span for="password">Password</span>
-                          <input type="password" name="password" id="password" />
+                          <input type="password" placeholder="password" name="password" id="password" />
                           <button type="submit" class="btn">Login</button>
-
                           <a href="">Forgot Password</a>
                       </form>
-                  <form id="RegForm">
+                  <form id="RegForm"> 
                     <span for="Username">Username</span>
-                    <input type="text" name="Username" id="Username" />
+                    <input type="text" placeholder="Username" name="Username" id="Username" />
+                  
                     <span for="gender">Gender</span>
                     <input
                       class="gender-radio-input"
@@ -73,9 +74,9 @@
                     />
                     <label class="gender-radio-label" for="female">Female</label>
                     <span for="Email">Email</span>
-                    <input type="email" name="Email" id="Email" />
+                    <input type="email"  placeholder="Emial" name="Email" id="Email" />
                     <span for="password">Password</span>
-                    <input type="password" name="password" id="password" />
+                    <input type="password" placeholder="Password" name="password" id="password" />
                     <input
                       class="checkbox-input"
                       type="checkbox"
@@ -86,6 +87,7 @@
                       >I agreed with terms and conditions</span
                     >
                     <button type="submit" class="btn">Register</button>
+                    
                   </form>
                 </div>
               </div>
@@ -108,6 +110,7 @@
           </div>
         </div>
       </aside>
+      </div>
     <!----------------------------Footer-------------------->
     <div class="footer">
       <div class="container">
@@ -176,8 +179,8 @@
         }
 
         function login(){
-          RegForm.style.transform ="translateX(300px)";
-          LoginForm.style.transform ="translateX(300px)";
+          RegForm.style.transform ="translateX(330px)";
+          LoginForm.style.transform ="translateX(330px)";
           Indicator.style.transform ="translateX(0px)";
         }
         </script>
